@@ -1,0 +1,17 @@
+flowchart LR
+  VIN[ESP32 VIN] --> VCC[HC-SR04 VCC]
+  GND[ESP32 GND] --> HGND[HC-SR04 GND]
+  D18[ESP32 GPIO18] --> TRIG[HC-SR04 TRIG]
+  ECHO[HC-SR04 ECHO] --> R1[1k ohm]
+  R1 --> MID[Row 24 midpoint]
+  MID --> D19[ESP32 GPIO19]
+  MID --> R2[2k ohm]
+  R2 --> GND
+
+  D21[ESP32 GPIO21] --> RLED[220 ohm]
+  RLED --> LED[Red LED]
+  LED --> GND
+
+  VIN --> SRED[Servo red]
+  GND --> SBROWN[Servo brown]
+  D22[ESP32 GPIO22] --> SORANGE[Servo orange]

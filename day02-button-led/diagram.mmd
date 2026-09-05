@@ -1,0 +1,9 @@
+flowchart LR
+  D22[ESP32 GPIO22 INPUT_PULLUP] --> D26[D26/E26]
+  D26 --> SW[Pushbutton]
+  SW --> G28[F28/G28]
+  G28 --> GND[ESP32 GND]
+
+  D23[ESP32 GPIO23] --> R[220 ohm]
+  R --> LED[LED]
+  LED --> GND

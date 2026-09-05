@@ -1,0 +1,7 @@
+flowchart LR
+  GPIO23[ESP32 GPIO23] --> C15[C15/D15]
+  C15 --> R[220 ohm resistor]
+  R --> E20[D20/E20]
+  E20 --> LED[LED anode -> cathode]
+  LED --> G20[F20/G20]
+  G20 --> GND[ESP32 GND]
