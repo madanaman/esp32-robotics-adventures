@@ -36,3 +36,13 @@ Some sessions were done with the ESP32 off-board and some were rebuilt while deb
 3. [Day 3 — Servo motion + button control](day03-servo/README.md)
 4. [Day 4 — Ultrasonic automatic gate](day04-ultrasonic-gate/README.md)
 5. [Day 5 — Smart parking sensor](day05-smart-parking/README.md)
+
+## Diagram files
+
+Each day includes three diagram formats:
+
+- `diagram.mmd` — Mermaid source.
+- `diagram.drawio` — native editable draw.io / diagrams.net source.
+- `diagram.drawio.png` — PNG preview with the draw.io diagram data embedded, so it can be reopened and edited in draw.io.
+
+For Git, prefer keeping the `.drawio` source. The editable PNG is convenient when you want a diagram that is both immediately viewable and still recoverable in draw.io.
