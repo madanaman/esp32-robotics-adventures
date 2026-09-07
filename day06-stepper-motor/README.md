@@ -60,6 +60,97 @@ Equivalent effective coil order:
 IN1 -> IN3 -> IN2 -> IN4
 ```
 
+## Main code examples
+Day 6 includes two main sketches.
+
+### `day06_stepper_basic.ino`
+Purpose: teach the low-level mechanics of a stepper motor before introducing a library.
+
+The motor does not receive a simple "rotate" signal. The ESP32 repeatedly energizes different coils through the ULN2003. The order of those magnetic states determines rotation.
+
+This low-level sketch is intentionally verbose so the stepping mechanism is visible:
+- IN1-IN4 control four driver channels.
+- Each `setStep(...)` call energizes a particular combination of motor coils.
+- Changing the sequence moves the magnetic field around the motor.
+- Repeating the sequence makes the shaft rotate.
+- Incorrect phase ordering can cause vibration without rotation.
+
+For our exact 28BYJ-48 + ULN2003 setup, the working full-step sequence is:
+
+```text
+1010
+0110
+0101
+1001
+```
+
+The bits correspond to:
+
+```text
+IN1 IN2 IN3 IN4
+```
+
+### `day06_stepper_library.ino`
+Purpose: show how Arduino's Stepper library hides the coil-sequencing details once the basic mechanism is understood.
+
+The physical wiring remains:
+
+```text
+ULN2003 IN1 -> GPIO5
+ULN2003 IN2 -> GPIO18
+ULN2003 IN3 -> GPIO19
+ULN2003 IN4 -> GPIO21
+```
+
+However, for this 28BYJ-48 + Stepper library combination, the constructor must use the effective coil order:
+
+```text
+IN1, IN3, IN2, IN4
+```
+
+So the sketch uses:
+
+```cpp
+Stepper motor(STEPS_PER_REV, 5, 19, 18, 21);
+```
+
+The Stepper library lets us move from low-level coil patterns to a higher-level API:
+
+```cpp
+motor.step(512);
+motor.step(-512);
+```
+
+Positive and negative values move in opposite directions.
+
+For our motor:
+
+```text
+2048 steps ~= 360 degrees
+1024 steps ~= 180 degrees
+512 steps  ~= 90 degrees
+256 steps  ~= 45 degrees
+```
+
+We then created:
+
+```cpp
+rotateDegrees(90);
+rotateDegrees(-90);
+```
+
+using:
+
+```cpp
+steps = degrees * 2048 / 360;
+```
+
+This is an abstraction:
+- The basic version teaches how the motor rotates.
+- The library version lets application code say what movement it wants.
+
+Important debugging result: our attempts to manually implement forward/reverse logic became error-prone. Using Arduino's Stepper library successfully demonstrated reliable positive and negative rotation and confirmed that the ESP32, ULN2003, motor, wiring, and power path were all functioning.
+
 ## Debugging journey
 - The ULN2003 LEDs sequenced, but the motor shaft only vibrated.
 - Simple stepping sequences were tested first.
