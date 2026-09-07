@@ -3,6 +3,11 @@
 ## Goal
 Control a 28BYJ-48 5V stepper motor from an ESP32 using a ULN2003 driver board, then debug the coil sequence and power arrangement until the shaft rotates reliably.
 
+## Outcome video
+Watch the working Day 6 stepper motor demo:
+
+[![Day 6 stepper motor outcome video](https://img.youtube.com/vi/BlyWCj2tDgo/hqdefault.jpg)](https://youtu.be/BlyWCj2tDgo)
+
 ## What a stepper motor is
 A stepper motor moves in small fixed steps instead of spinning freely like a DC motor. Inside the motor are multiple coils. By energizing those coils in the right order, the magnetic field moves around the motor and pulls the rotor from one position to the next.
 
