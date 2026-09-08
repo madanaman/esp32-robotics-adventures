@@ -8,6 +8,13 @@ Watch the working Day 6 stepper motor demo:
 
 [![Day 6 stepper motor outcome video](https://img.youtube.com/vi/BlyWCj2tDgo/hqdefault.jpg)](https://youtu.be/BlyWCj2tDgo)
 
+## Realistic wiring view
+Use this build view to identify the physical boards, find each ESP32 pin, and trace every connection to the ULN2003 driver.
+
+![Realistic Day 6 ESP32, ULN2003, and 28BYJ-48 wiring](wiring-realistic.png)
+
+The colored rings mark the exact ESP32 pins used in the project. Match the printed pin label as well as the wire color before powering the circuit.
+
 ## What a stepper motor is
 A stepper motor moves in small fixed steps instead of spinning freely like a DC motor. Inside the motor are multiple coils. By energizing those coils in the right order, the magnetic field moves around the motor and pulls the rotor from one position to the next.
 
