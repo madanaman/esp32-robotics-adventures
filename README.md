@@ -1,6 +1,6 @@
-# ESP32 Robotics Adventures — Days 1–6
+# ESP32 Robotics Adventures
 
-A reproducible record of the first six ESP32 learning sessions.
+A reproducible record of hands-on ESP32 robotics learning sessions.
 
 ## Hardware
 - ELEGOO ESP32 USB-C Super Starter Kit (ESP32-WROOM-32 style dev board)
@@ -41,13 +41,15 @@ Some sessions were done with the ESP32 off-board and some were rebuilt while deb
 4. [Day 4 — Ultrasonic automatic gate](day04-ultrasonic-gate/README.md)
 5. [Day 5 — Smart parking sensor](day05-smart-parking/README.md)
 6. [Day 6 — Stepper motor with ULN2003 driver](day06-stepper-motor/README.md) — Stepper motor + ULN2003 driver, coil sequencing, power/current debugging.
+8. [Day 8 — Sensor-Based Automatic Door](day08-sensor-door/README.md) — HC-SR04 + servo with state, hysteresis, and delayed closing using `millis()`.
 
 ## Diagram files
 
-Each day includes three diagram formats:
+Diagram source files are kept alongside their previews so the wiring can be reviewed and revised:
 
 - `diagram.mmd` — Mermaid source.
 - `diagram.drawio` — native editable draw.io / diagrams.net source.
 - `diagram.drawio.png` — PNG preview with the draw.io diagram data embedded, so it can be reopened and edited in draw.io.
+- `diagram-realistic.drawio` / `diagram-realistic.drawio.png` — detailed, beginner-focused build view used when exact physical wiring matters.
 
-For Git, prefer keeping the `.drawio` source. The editable PNG is convenient when you want a diagram that is both immediately viewable and still recoverable in draw.io.
+Not every day needs every format. For Git, keep the `.drawio` source with its PNG preview. The embedded PNG is convenient when you want an image that can also be reopened in draw.io.

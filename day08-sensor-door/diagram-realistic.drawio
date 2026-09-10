@@ -1,0 +1,176 @@
+<mxfile host="app.diagrams.net" modified="2026-09-10T00:00:00.000Z" agent="Codex" version="24.7.17" type="device" compressed="false">
+  <diagram id="day08-realistic" name="Day 8 Wiring">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" background="#f7f9fb" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="title" value="&lt;b&gt;DAY 8: SENSOR-BASED AUTOMATIC DOOR&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=28;fontColor=#17212b;" vertex="1" parent="1">
+          <mxGeometry x="410" y="20" width="780" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="subtitle" value="HC-SR04 + ESP32 + SG90 • exact build wiring" style="text;html=1;align=center;verticalAlign=middle;fontSize=15;fontColor=#52606d;" vertex="1" parent="1">
+          <mxGeometry x="500" y="62" width="600" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- ESP32 DevKit -->
+        <mxCell id="esp_board" value="" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#202a30;strokeColor=#10171b;strokeWidth=3;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="45" y="135" width="300" height="590" as="geometry"/>
+        </mxCell>
+        <mxCell id="esp_antenna" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#182126;strokeColor=#83929a;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="112" y="158" width="165" height="52" as="geometry"/>
+        </mxCell>
+        <mxCell id="esp_module" value="&lt;b&gt;ESPRESSIF&lt;/b&gt;&lt;br&gt;ESP32-WROOM-32" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=15;fontColor=#37474f;fillColor=#cfd8dc;strokeColor=#78909c;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="95" y="215" width="200" height="190" as="geometry"/>
+        </mxCell>
+        <mxCell id="esp_name" value="&lt;b&gt;ESP32 DEVKIT V1&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="70" y="430" width="250" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="usb_socket" value="USB" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontColor=#263238;fillColor=#c5cdd1;strokeColor=#607d8b;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="145" y="675" width="100" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="usb_power" value="&lt;b&gt;USB POWER&lt;/b&gt;&lt;br&gt;computer / power bank" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fontColor=#263238;fillColor=#ffffff;strokeColor=#546e7a;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="780" width="250" height="65" as="geometry"/>
+        </mxCell>
+
+        <!-- ESP32 pin header and highlighted connection points -->
+        <mxCell id="gpio22" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#202a30;strokeColor=#f28c28;strokeWidth=5;" vertex="1" parent="1">
+          <mxGeometry x="332" y="205" width="20" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="gpio22_label" value="GPIO22" style="text;html=1;align=right;verticalAlign=middle;fontSize=15;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="245" y="198" width="80" height="34" as="geometry"/>
+        </mxCell>
+        <mxCell id="gpio19" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#202a30;strokeColor=#1976d2;strokeWidth=5;" vertex="1" parent="1">
+          <mxGeometry x="332" y="315" width="20" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="gpio19_label" value="GPIO19" style="text;html=1;align=right;verticalAlign=middle;fontSize=15;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="245" y="308" width="80" height="34" as="geometry"/>
+        </mxCell>
+        <mxCell id="gpio18" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#202a30;strokeColor=#f3c000;strokeWidth=5;" vertex="1" parent="1">
+          <mxGeometry x="332" y="365" width="20" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="gpio18_label" value="GPIO18" style="text;html=1;align=right;verticalAlign=middle;fontSize=15;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="245" y="358" width="80" height="34" as="geometry"/>
+        </mxCell>
+        <mxCell id="esp_vin" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#202a30;strokeColor=#e53935;strokeWidth=5;" vertex="1" parent="1">
+          <mxGeometry x="332" y="565" width="20" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="esp_vin_label" value="VIN" style="text;html=1;align=right;verticalAlign=middle;fontSize=15;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="260" y="558" width="65" height="34" as="geometry"/>
+        </mxCell>
+        <mxCell id="esp_gnd" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#202a30;strokeColor=#111111;strokeWidth=5;" vertex="1" parent="1">
+          <mxGeometry x="332" y="625" width="20" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="esp_gnd_label" value="GND" style="text;html=1;align=right;verticalAlign=middle;fontSize=15;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="260" y="618" width="65" height="34" as="geometry"/>
+        </mxCell>
+
+        <!-- Breadboard -->
+        <mxCell id="breadboard" value="" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#fffefe;strokeColor=#c7cdd1;strokeWidth=3;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="230" width="620" height="485" as="geometry"/>
+        </mxCell>
+        <mxCell id="breadboard_label" value="BREADBOARD" style="text;html=1;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#7b8790;" vertex="1" parent="1">
+          <mxGeometry x="460" y="685" width="120" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="rail_red_line" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ef5350;strokeColor=#c62828;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="475" y="257" width="550" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="rail_gnd_line" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#37474f;strokeColor=#111111;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="475" y="652" width="550" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="rail_red" value="+ VIN / 5V RAIL" style="text;html=1;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#c62828;" vertex="1" parent="1">
+          <mxGeometry x="475" y="267" width="155" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="rail_gnd" value="- COMMON GROUND RAIL" style="text;html=1;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#263238;" vertex="1" parent="1">
+          <mxGeometry x="475" y="662" width="190" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="trench" value="CENTER TRENCH" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fontColor=#a4abb0;fillColor=#eef1f3;strokeColor=#d4d9dc;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="465" y="455" width="570" height="35" as="geometry"/>
+        </mxCell>
+
+        <!-- Representative breadboard holes -->
+        <mxCell id="holes_top" value="○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontColor=#aeb7bc;spacing=0;" vertex="1" parent="1"><mxGeometry x="480" y="310" width="530" height="30" as="geometry"/></mxCell>
+        <mxCell id="holes_top2" value="○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontColor=#aeb7bc;spacing=0;" vertex="1" parent="1"><mxGeometry x="480" y="400" width="530" height="30" as="geometry"/></mxCell>
+        <mxCell id="holes_bottom" value="○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontColor=#aeb7bc;spacing=0;" vertex="1" parent="1"><mxGeometry x="480" y="515" width="530" height="30" as="geometry"/></mxCell>
+        <mxCell id="holes_bottom2" value="○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○  ○" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontColor=#aeb7bc;spacing=0;" vertex="1" parent="1"><mxGeometry x="480" y="600" width="530" height="30" as="geometry"/></mxCell>
+
+        <!-- HC-SR04 -->
+        <mxCell id="sensor_board" value="" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#167a9b;strokeColor=#0d506b;strokeWidth=3;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="555" y="115" width="390" height="125" as="geometry"/>
+        </mxCell>
+        <mxCell id="sensor_name" value="&lt;b&gt;HC-SR04&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontColor=#ffffff;" vertex="1" parent="1"><mxGeometry x="675" y="122" width="150" height="28" as="geometry"/></mxCell>
+        <mxCell id="transducer_1" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d8dee1;gradientColor=#8c969c;gradientDirection=south;strokeColor=#59656b;strokeWidth=4;" vertex="1" parent="1"><mxGeometry x="590" y="140" width="78" height="78" as="geometry"/></mxCell>
+        <mxCell id="transducer_1_inner" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#707b81;strokeColor=#eef2f3;strokeWidth=3;" vertex="1" parent="1"><mxGeometry x="608" y="158" width="42" height="42" as="geometry"/></mxCell>
+        <mxCell id="transducer_2" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d8dee1;gradientColor=#8c969c;gradientDirection=south;strokeColor=#59656b;strokeWidth=4;" vertex="1" parent="1"><mxGeometry x="832" y="140" width="78" height="78" as="geometry"/></mxCell>
+        <mxCell id="transducer_2_inner" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#707b81;strokeColor=#eef2f3;strokeWidth=3;" vertex="1" parent="1"><mxGeometry x="850" y="158" width="42" height="42" as="geometry"/></mxCell>
+
+        <mxCell id="sensor_vcc" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#e53935;strokeWidth=4;" vertex="1" parent="1"><mxGeometry x="682" y="230" width="18" height="18" as="geometry"/></mxCell>
+        <mxCell id="sensor_trig" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#f3c000;strokeWidth=4;" vertex="1" parent="1"><mxGeometry x="727" y="230" width="18" height="18" as="geometry"/></mxCell>
+        <mxCell id="sensor_echo" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#1976d2;strokeWidth=4;" vertex="1" parent="1"><mxGeometry x="772" y="230" width="18" height="18" as="geometry"/></mxCell>
+        <mxCell id="sensor_gnd" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#111111;strokeWidth=4;" vertex="1" parent="1"><mxGeometry x="817" y="230" width="18" height="18" as="geometry"/></mxCell>
+        <mxCell id="sensor_pin_labels" value="VCC     TRIG     ECHO     GND" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1"><mxGeometry x="650" y="204" width="220" height="24" as="geometry"/></mxCell>
+
+        <!-- Physical ECHO divider on breadboard -->
+        <mxCell id="r1_top" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#1976d2;strokeColor=#ffffff;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="772" y="330" width="18" height="18" as="geometry"/></mxCell>
+        <mxCell id="r1" value="" style="rounded=1;arcSize=45;whiteSpace=wrap;html=1;fillColor=#e7c58b;strokeColor=#8a6b3f;strokeWidth=2;shadow=1;" vertex="1" parent="1"><mxGeometry x="761" y="360" width="40" height="70" as="geometry"/></mxCell>
+        <mxCell id="r1_band1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#795548;strokeColor=none;" vertex="1" parent="1"><mxGeometry x="763" y="374" width="36" height="7" as="geometry"/></mxCell>
+        <mxCell id="r1_band2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#111111;strokeColor=none;" vertex="1" parent="1"><mxGeometry x="763" y="390" width="36" height="7" as="geometry"/></mxCell>
+        <mxCell id="r1_band3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d32f2f;strokeColor=none;" vertex="1" parent="1"><mxGeometry x="763" y="406" width="36" height="7" as="geometry"/></mxCell>
+        <mxCell id="r1_label" value="&lt;b&gt;1kΩ&lt;/b&gt;&lt;br&gt;from ECHO" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fontColor=#263238;fillColor=#fff8e1;strokeColor=#c9a96e;strokeWidth=1;" vertex="1" parent="1"><mxGeometry x="815" y="365" width="105" height="58" as="geometry"/></mxCell>
+
+        <mxCell id="midpoint" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#00a6b2;strokeWidth=6;shadow=1;" vertex="1" parent="1"><mxGeometry x="768" y="447" width="26" height="26" as="geometry"/></mxCell>
+        <mxCell id="midpoint_label" value="&lt;b&gt;ECHO MIDPOINT ~3.3V&lt;/b&gt;&lt;br&gt;GPIO19 connects here" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=15;fontColor=#004d55;fillColor=#e0f7f8;strokeColor=#00a6b2;strokeWidth=2;shadow=1;" vertex="1" parent="1"><mxGeometry x="815" y="440" width="205" height="58" as="geometry"/></mxCell>
+
+        <mxCell id="r2" value="" style="rounded=1;arcSize=45;whiteSpace=wrap;html=1;fillColor=#e7c58b;strokeColor=#8a6b3f;strokeWidth=2;shadow=1;" vertex="1" parent="1"><mxGeometry x="761" y="510" width="40" height="70" as="geometry"/></mxCell>
+        <mxCell id="r2_band1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d32f2f;strokeColor=none;" vertex="1" parent="1"><mxGeometry x="763" y="524" width="36" height="7" as="geometry"/></mxCell>
+        <mxCell id="r2_band2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#111111;strokeColor=none;" vertex="1" parent="1"><mxGeometry x="763" y="540" width="36" height="7" as="geometry"/></mxCell>
+        <mxCell id="r2_band3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d32f2f;strokeColor=none;" vertex="1" parent="1"><mxGeometry x="763" y="556" width="36" height="7" as="geometry"/></mxCell>
+        <mxCell id="r2_label" value="&lt;b&gt;2kΩ&lt;/b&gt;&lt;br&gt;to GND" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fontColor=#263238;fillColor=#fff8e1;strokeColor=#c9a96e;strokeWidth=1;" vertex="1" parent="1"><mxGeometry x="815" y="516" width="105" height="58" as="geometry"/></mxCell>
+        <mxCell id="r2_bottom" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#111111;strokeColor=#ffffff;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="772" y="600" width="18" height="18" as="geometry"/></mxCell>
+
+        <!-- SG90 servo -->
+        <mxCell id="servo_body" value="&lt;b&gt;SG90&lt;/b&gt;&lt;br&gt;MICRO SERVO" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=bottom;fontSize=18;fontColor=#ffffff;spacingBottom=28;fillColor=#1976d2;gradientColor=#0d47a1;gradientDirection=south;strokeColor=#0b4f8a;strokeWidth=3;shadow=1;" vertex="1" parent="1"><mxGeometry x="1190" y="270" width="260" height="290" as="geometry"/></mxCell>
+        <mxCell id="servo_hub" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#eceff1;strokeColor=#78909c;strokeWidth=4;" vertex="1" parent="1"><mxGeometry x="1275" y="292" width="90" height="90" as="geometry"/></mxCell>
+        <mxCell id="servo_horn" value="" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#90a4ae;strokeWidth=3;shadow=1;rotation=-18;" vertex="1" parent="1"><mxGeometry x="1227" y="321" width="185" height="28" as="geometry"/></mxCell>
+        <mxCell id="servo_signal" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#f28c28;strokeWidth=5;" vertex="1" parent="1"><mxGeometry x="1179" y="455" width="22" height="22" as="geometry"/></mxCell>
+        <mxCell id="servo_power" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#e53935;strokeWidth=5;" vertex="1" parent="1"><mxGeometry x="1179" y="500" width="22" height="22" as="geometry"/></mxCell>
+        <mxCell id="servo_gnd" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#4e342e;strokeWidth=5;" vertex="1" parent="1"><mxGeometry x="1179" y="545" width="22" height="22" as="geometry"/></mxCell>
+        <mxCell id="servo_pin_labels" value="ORANGE / SIGNAL&lt;br&gt;&lt;br&gt;RED / VIN&lt;br&gt;&lt;br&gt;BROWN / GND" style="text;html=1;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#263238;" vertex="1" parent="1"><mxGeometry x="1210" y="432" width="170" height="150" as="geometry"/></mxCell>
+
+        <!-- Wires: signal -->
+        <mxCell id="wire_servo_signal" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#f28c28;strokeWidth=6;endArrow=none;" edge="1" parent="1" source="gpio22" target="servo_signal">
+          <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="390" y="215"/><mxPoint x="390" y="110"/><mxPoint x="1090" y="110"/><mxPoint x="1090" y="466"/></Array></mxGeometry>
+        </mxCell>
+        <mxCell id="wire_servo_signal_label" value="GPIO22 → SERVO SIGNAL" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#7a3f00;fillColor=#fff7ed;strokeColor=#f28c28;strokeWidth=1;" vertex="1" parent="1"><mxGeometry x="945" y="115" width="190" height="34" as="geometry"/></mxCell>
+        <mxCell id="wire_trig" value="GPIO18 → TRIG" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#f3c000;strokeWidth=6;endArrow=none;fontSize=13;fontStyle=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="gpio18" target="sensor_trig">
+          <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="395" y="375"/><mxPoint x="395" y="195"/><mxPoint x="736" y="195"/></Array></mxGeometry>
+        </mxCell>
+        <mxCell id="wire_echo_to_divider" value="ECHO ~5V" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1976d2;strokeWidth=6;endArrow=none;fontSize=13;fontStyle=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="sensor_echo" target="r1_top">
+          <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="781" y="280"/><mxPoint x="781" y="339"/></Array></mxGeometry>
+        </mxCell>
+        <mxCell id="wire_midpoint_gpio" value="midpoint → GPIO19" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1976d2;strokeWidth=6;endArrow=none;fontSize=13;fontStyle=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="gpio19" target="midpoint">
+          <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="405" y="325"/><mxPoint x="405" y="460"/><mxPoint x="720" y="460"/></Array></mxGeometry>
+        </mxCell>
+
+        <!-- Divider leads -->
+        <mxCell id="lead_r1_top" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#607d8b;strokeWidth=3;endArrow=none;" edge="1" parent="1" source="r1_top" target="r1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="lead_r1_bottom" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#607d8b;strokeWidth=3;endArrow=none;" edge="1" parent="1" source="r1" target="midpoint"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="lead_r2_top" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#607d8b;strokeWidth=3;endArrow=none;" edge="1" parent="1" source="midpoint" target="r2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="lead_r2_bottom" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#607d8b;strokeWidth=3;endArrow=none;" edge="1" parent="1" source="r2" target="r2_bottom"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- Wires: shared power and ground -->
+        <mxCell id="wire_esp_vin" value="VIN" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#e53935;strokeWidth=6;endArrow=none;fontSize=13;fontStyle=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="esp_vin"><mxGeometry relative="1" as="geometry"><mxPoint x="475" y="261" as="targetPoint"/><Array as="points"><mxPoint x="400" y="575"/><mxPoint x="400" y="261"/></Array></mxGeometry></mxCell>
+        <mxCell id="wire_esp_gnd" value="GND" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#111111;strokeWidth=6;endArrow=none;fontColor=#ffffff;fontSize=13;fontStyle=1;labelBackgroundColor=#546e7a;" edge="1" parent="1" source="esp_gnd"><mxGeometry relative="1" as="geometry"><mxPoint x="475" y="656" as="targetPoint"/><Array as="points"><mxPoint x="400" y="635"/><mxPoint x="400" y="656"/></Array></mxGeometry></mxCell>
+        <mxCell id="wire_sensor_vcc" value="VCC" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#e53935;strokeWidth=6;endArrow=none;fontSize=13;fontStyle=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="sensor_vcc"><mxGeometry relative="1" as="geometry"><mxPoint x="691" y="261" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="wire_sensor_gnd" value="GND" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#111111;strokeWidth=6;endArrow=none;fontColor=#ffffff;fontSize=13;fontStyle=1;labelBackgroundColor=#546e7a;" edge="1" parent="1" source="sensor_gnd"><mxGeometry relative="1" as="geometry"><mxPoint x="960" y="656" as="targetPoint"/><Array as="points"><mxPoint x="970" y="219"/><mxPoint x="970" y="656"/></Array></mxGeometry></mxCell>
+        <mxCell id="wire_divider_gnd" value="2kΩ → GND" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#111111;strokeWidth=5;endArrow=none;fontColor=#ffffff;fontSize=13;fontStyle=1;labelBackgroundColor=#546e7a;" edge="1" parent="1" source="r2_bottom"><mxGeometry relative="1" as="geometry"><mxPoint x="781" y="656" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="wire_servo_power" value="servo red → VIN" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#e53935;strokeWidth=6;endArrow=none;fontSize=13;fontStyle=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="servo_power"><mxGeometry relative="1" as="geometry"><mxPoint x="1015" y="261" as="targetPoint"/><Array as="points"><mxPoint x="1120" y="511"/><mxPoint x="1120" y="261"/></Array></mxGeometry></mxCell>
+        <mxCell id="wire_servo_gnd" value="servo brown → GND" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#4e342e;strokeWidth=6;endArrow=none;fontSize=13;fontStyle=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="servo_gnd"><mxGeometry relative="1" as="geometry"><mxPoint x="1015" y="656" as="targetPoint"/><Array as="points"><mxPoint x="1120" y="556"/><mxPoint x="1120" y="656"/></Array></mxGeometry></mxCell>
+        <mxCell id="wire_usb" value="USB cable" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#455a64;strokeWidth=9;endArrow=none;fontSize=13;fontStyle=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="usb_power" target="usb_socket"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- Build notes and legend -->
+        <mxCell id="warning" value="&lt;b&gt;IMPORTANT:&lt;/b&gt; HC-SR04 ECHO must go through the 1kΩ + 2kΩ divider. Never connect 5V ECHO directly to GPIO19." style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=15;fontColor=#7a3e00;fillColor=#fff3cd;strokeColor=#d99b21;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="350" y="735" width="900" height="58" as="geometry"/></mxCell>
+        <mxCell id="legend" value="🔴 VIN / 5V     ⚫ GND     🟡 GPIO18 / TRIG     🔵 GPIO19 / divided ECHO     🟠 GPIO22 / servo signal" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#263238;fillColor=#ffffff;strokeColor=#b0bec5;strokeWidth=2;shadow=1;" vertex="1" parent="1"><mxGeometry x="315" y="815" width="970" height="50" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
