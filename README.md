@@ -12,6 +12,9 @@ A reproducible record of hands-on ESP32 robotics learning sessions.
 - HC-SR04 ultrasonic sensor
 - 28BYJ-48 5V stepper motor
 - ULN2003 stepper motor driver board
+- Analog joystick module
+- L293D H-bridge motor driver
+- 3-6V DC motor and plastic fan blade
 - Jumper wires
 - USB data cable (the OnePlus cable worked reliably)
 - USB power bank
@@ -42,6 +45,7 @@ Some sessions were done with the ESP32 off-board and some were rebuilt while deb
 5. [Day 5 — Smart parking sensor](day05-smart-parking/README.md)
 6. [Day 6 — Stepper motor with ULN2003 driver](day06-stepper-motor/README.md) — Stepper motor + ULN2003 driver, coil sequencing, power/current debugging.
 8. [Day 8 — Sensor-Based Automatic Door](day08-sensor-door/README.md) — HC-SR04 + servo with state, hysteresis, and delayed closing using `millis()`.
+9. [Day 9 — Joystick-Controlled Bidirectional Fan](day09-joystick-controlled-fan/README.md) — Analog joystick input controlling DC motor speed and direction using an L293D H-bridge, PWM, state, dead zones, motor ramping, and soft direction reversal.
 
 ## Diagram files
 
